@@ -97,26 +97,29 @@ class _CommentThreadWidgetState extends State<CommentThreadWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16),
+      // margin: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Comments Header
-          Row(
-            children: [
-              CustomIconWidget(
-                iconName: 'chat_bubble_outline',
-                color: AppTheme.lightTheme.colorScheme.primary,
-                size: 20,
-              ),
-              SizedBox(width: 8),
-              Text(
-                'Comments (${comments.length})',
-                style: AppTheme.lightTheme.textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.w600,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Row(
+              children: [
+                CustomIconWidget(
+                  iconName: 'chat_bubble_outline',
+                  color: AppTheme.lightTheme.colorScheme.primary,
+                  size: 20,
                 ),
-              ),
-            ],
+                SizedBox(width: 8),
+                Text(
+                  'Comments (${comments.length})',
+                  style: AppTheme.lightTheme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
           ),
           SizedBox(height: 16),
 
@@ -125,7 +128,7 @@ class _CommentThreadWidgetState extends State<CommentThreadWidget> {
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: AppTheme.lightTheme.colorScheme.surface,
-              borderRadius: BorderRadius.circular(12),
+              // borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: AppTheme.lightTheme.colorScheme.outline
                     .withValues(alpha: 0.2),
@@ -239,7 +242,7 @@ class _CommentThreadWidgetState extends State<CommentThreadWidget> {
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppTheme.lightTheme.colorScheme.surface,
-        borderRadius: BorderRadius.circular(12),
+        // borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: AppTheme.lightTheme.colorScheme.outline.withValues(alpha: 0.2),
         ),
@@ -322,7 +325,6 @@ class _CommentThreadWidgetState extends State<CommentThreadWidget> {
               ),
             ],
           ),
-          SizedBox(height: 12),
 
           // Comment Content
           Text(

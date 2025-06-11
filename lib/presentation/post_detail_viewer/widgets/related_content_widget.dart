@@ -43,7 +43,6 @@ class RelatedContentWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 16),
 
           // Related Posts Horizontal List
           SizedBox(
@@ -172,7 +171,7 @@ class RelatedContentWidget extends StatelessWidget {
               // Post Content
               Expanded(
                 child: Padding(
-                  padding: EdgeInsets.all(12),
+                  padding: EdgeInsets.all(10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -205,7 +204,7 @@ class RelatedContentWidget extends StatelessWidget {
                       // Subject Tag
                       Container(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
                           color: AppTheme.lightTheme.colorScheme.primary
                               .withValues(alpha: 0.1),

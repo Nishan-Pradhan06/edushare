@@ -18,11 +18,11 @@ class CreatorProfileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16),
+      // margin: EdgeInsets.symmetric(horizontal: 16),
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppTheme.lightTheme.colorScheme.surface,
-        borderRadius: BorderRadius.circular(12),
+        // borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: AppTheme.lightTheme.colorScheme.outline.withValues(alpha: 0.2),
         ),
@@ -158,8 +158,7 @@ class CreatorProfileWidget extends StatelessWidget {
                 child: Text(
                   isFollowing ? 'Following' : 'Follow',
                   style: AppTheme.lightTheme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
+                      fontWeight: FontWeight.w600, color: Colors.white),
                 ),
               ),
             ],

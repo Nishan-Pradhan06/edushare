@@ -261,6 +261,7 @@ class _PostDetailViewerState extends State<PostDetailViewer> {
           // Post Content
           SliverToBoxAdapter(
             child: Column(
+              spacing: 10,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Post Header
